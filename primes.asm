@@ -2,15 +2,11 @@ bits 64
 
 section .data
 
-true_string:
-    db "true"
-true_string_length:
-    equ $ - true_string
+true_string: db "true"
+true_string_length: equ $ - true_string
 
-false_string:
-    db "false"
-false_string_length:
-    equ $ - false_string
+false_string: db "false"
+false_string_length: equ $ - false_string
 
 
 section .text
