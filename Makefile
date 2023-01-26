@@ -2,7 +2,7 @@
 program: primes.o
 	ld $^ -o $@
 
-%.o: %.nasm
+%.o: %.asm
 	nasm -f elf64 $<
 
 example: example.o
